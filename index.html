@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Software Developer</title>
-    <meta name="description" content="Personal portfolio of Your Name - Software Developer showcasing projects and professional experience">
+    <title>Yiran Chen - Full-Stack Software Developer</title>
+    <meta name="description" content="Personal portfolio of Yiran Chen - Full-Stack Software Developer showcasing modern web applications and professional experience">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -67,13 +67,30 @@
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 border-b border-gray-200">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-xl font-bold text-text-primary">Your Name</a>
+                    <a href="#" class="text-xl font-bold text-text-primary">Yiran Chen</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
                         <a href="#projects" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Projects</a>
                         <a href="#contact" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
                     </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-text-primary focus:outline-none focus:text-text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-background border-b border-gray-200">
+                    <a href="#about" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300" onclick="toggleMobileMenu()">About</a>
+                    <a href="#projects" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300" onclick="toggleMobileMenu()">Projects</a>
+                    <a href="#contact" class="text-text-secondary hover:text-text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300" onclick="toggleMobileMenu()">Contact</a>
                 </div>
             </div>
         </nav>
@@ -83,14 +100,53 @@
         <!-- Hero/About Section -->
         <section id="about" class="py-20 sm:py-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Content will be added here -->
-                <div class="text-center">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-tight">
-                        Coming Soon
-                    </h1>
-                    <p class="mt-4 text-lg sm:text-xl text-text-secondary">
-                        Building an amazing portfolio website...
-                    </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column: Text Content -->
+                    <div class="space-y-6">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-tight">
+                            Hi, I'm <span class="text-accent">Yiran Chen</span>
+                        </h1>
+                        <p class="text-xl sm:text-2xl text-text-secondary font-medium">
+                            Full-Stack Software Developer
+                        </p>
+                        <p class="text-lg text-text-secondary leading-relaxed max-w-2xl">
+                            I'm a passionate software developer with expertise in building modern web applications. 
+                            I love creating clean, efficient code and turning ideas into reality through technology.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#projects" class="inline-flex items-center justify-center px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                                View My Work
+                            </a>
+                            <div class="flex items-center space-x-4">
+                                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-colors duration-300" aria-label="LinkedIn Profile">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/ychen131" target="_blank" rel="noopener noreferrer" class="text-text-secondary hover:text-accent transition-colors duration-300" aria-label="GitHub Profile">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Profile Photo -->
+                    <div class="flex justify-center lg:justify-end">
+                        <div class="relative">
+                            <div class="w-80 h-80 rounded-full overflow-hidden bg-subtle-bg shadow-2xl">
+                                <!-- Placeholder for profile photo -->
+                                <div class="w-full h-full bg-gradient-to-br from-accent/20 to-accent/40 flex items-center justify-center">
+                                    <svg class="w-32 h-32 text-accent/60" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                </div>
+                                <!-- Uncomment when you have a profile photo -->
+                                <!-- <img src="assets/images/profile-photo.jpg" alt="Yiran Chen" class="w-full h-full object-cover"> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,15 +155,189 @@
         <section id="projects" class="py-20 sm:py-24 bg-subtle-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-text-primary text-center mb-12">My Projects</h2>
-                <!-- Project content will be added here -->
+                
+                <div class="space-y-20">
+                    <!-- Project 1 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- Project Content -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">E-Commerce Platform</h3>
+                            <p class="text-lg text-text-secondary leading-relaxed">
+                                A full-stack e-commerce platform built with modern web technologies, featuring user authentication, 
+                                product management, shopping cart functionality, and secure payment processing.
+                            </p>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    User authentication and authorization
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Real-time inventory management
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Stripe payment integration
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Responsive design for all devices
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">React</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Node.js</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">MongoDB</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Express</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Stripe</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-300">
+                                    Live Site
+                                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors duration-300">
+                                    View Code
+                                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project Media -->
+                        <div class="order-first lg:order-last">
+                            <div class="media-container video">
+                                <!-- Placeholder for project demo -->
+                                <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-accent/20 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <svg class="w-16 h-16 text-accent/60 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-9-4V8a3 3 0 013-3h6a3 3 0 013 3v2M4 12v8a3 3 0 003 3h10a3 3 0 003-3v-8"></path>
+                                        </svg>
+                                        <p class="text-accent/60 font-medium">Project Demo</p>
+                                        <p class="text-accent/40 text-sm">Video or GIF will be placed here</p>
+                                    </div>
+                                </div>
+                                <!-- Uncomment when you have project media -->
+                                <!-- <iframe src="your-loom-or-video-url" title="E-Commerce Platform Demo"></iframe> -->
+                                <!-- Or for GIFs: <img src="assets/images/project-ecommerce.gif" alt="E-Commerce Platform Demo"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- Project Media -->
+                        <div>
+                            <div class="media-container video">
+                                <!-- Placeholder for project demo -->
+                                <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-accent/20 flex items-center justify-center">
+                                    <div class="text-center">
+                                        <svg class="w-16 h-16 text-accent/60 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                        </svg>
+                                        <p class="text-accent/60 font-medium">Project Demo</p>
+                                        <p class="text-accent/40 text-sm">Video or GIF will be placed here</p>
+                                    </div>
+                                </div>
+                                <!-- Uncomment when you have project media -->
+                                <!-- <iframe src="your-loom-or-video-url" title="Task Management App Demo"></iframe> -->
+                                <!-- Or for GIFs: <img src="assets/images/project-task-manager.gif" alt="Task Management App Demo"> -->
+                            </div>
+                        </div>
+                        
+                        <!-- Project Content -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl sm:text-3xl font-bold text-text-primary">Task Management App</h3>
+                            <p class="text-lg text-text-secondary leading-relaxed">
+                                A collaborative task management application with real-time updates, drag-and-drop functionality, 
+                                and team collaboration features. Built with modern frameworks for optimal performance.
+                            </p>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Real-time collaboration with WebSockets
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Drag-and-drop task organization
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Team project management
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    Advanced filtering and search
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Vue.js</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">TypeScript</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Firebase</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Socket.io</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Tailwind CSS</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-300">
+                                    Live Site
+                                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors duration-300">
+                                    View Code
+                                    <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="py-20 sm:py-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-text-primary">Get In Touch</h2>
-                <!-- Contact content will be added here -->
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-6">Get In Touch</h2>
+                <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                    I'm always interested in new opportunities and exciting projects. 
+                    Whether you have a question or just want to say hello, I'd love to hear from you!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:your.email@example.com" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Say Hello
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -115,9 +345,16 @@
     <!-- Footer -->
     <footer class="bg-subtle-bg">
         <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500 border-t border-gray-200">
-            &copy; 2025 Your Name. All Rights Reserved.
+            &copy; 2025 Yiran Chen. All Rights Reserved.
         </div>
     </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
 
 </body>
 </html> 
