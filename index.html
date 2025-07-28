@@ -60,10 +60,17 @@
         }
         
         /* Enhanced responsive utilities */
+        @media (max-width: 1024px) {
+            .profile-photo {
+                width: 400px !important;
+                height: 320px !important;
+            }
+        }
+        
         @media (max-width: 640px) {
             .profile-photo {
-                width: 280px !important;
-                height: 280px !important;
+                width: 320px !important;
+                height: 256px !important;
             }
             /* Ensure full viewport height on mobile, accounting for mobile browser bars */
             #about {
@@ -74,8 +81,8 @@
         
         @media (max-width: 480px) {
             .profile-photo {
-                width: 240px !important;
-                height: 240px !important;
+                width: 280px !important;
+                height: 224px !important;
             }
             /* Adjust for very small screens */
             #about {
@@ -169,7 +176,7 @@
                     <!-- Right Column: Profile Photo -->
                     <div class="flex justify-center lg:justify-end">
                         <div class="relative">
-                            <div class="profile-photo w-96 h-96 rounded-lg overflow-hidden bg-subtle-bg shadow-2xl">
+                            <div class="profile-photo w-[480px] h-96 rounded-lg overflow-hidden bg-subtle-bg shadow-2xl">
                                 <!-- Profile photo with fallback background -->
                                 <img 
                                     src="assets/images/profile-photo.jpg" 
