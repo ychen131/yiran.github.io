@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Software Developer</title>
+    <meta name="description" content="Personal portfolio of Your Name - Software Developer showcasing projects and professional experience">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      // Custom colors inspired by the provided website
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'background': '#F5F3EF', // Light beige background
+              'text-primary': '#2c2c2c', // Dark gray for text
+              'text-secondary': '#5a5a5a', // Lighter gray for subtitles
+              'accent': '#5E6C5C', // Muted green accent
+              'accent-hover': '#7a8c79', // Lighter green for hover
+              'subtle-bg': '#EAE8E3' // A slightly darker beige for section backgrounds
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F3EF;
+            color: #2c2c2c;
+        }
+        /* Media container for responsive videos and images */
+        .media-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem; /* rounded-lg */
+            background-color: #EAE8E3; /* subtle-bg */
+        }
+        /* Use this for embedded videos (Loom, YouTube) to maintain a 16:9 aspect ratio */
+        .media-container.video {
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+        .media-container iframe,
+        .media-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures GIFs/images cover the area nicely */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-background/80 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 border-b border-gray-200">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold text-text-primary">Your Name</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#projects" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Projects</a>
+                        <a href="#contact" class="text-text-secondary hover:text-text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero/About Section -->
+        <section id="about" class="py-20 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Content will be added here -->
+                <div class="text-center">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-tight">
+                        Coming Soon
+                    </h1>
+                    <p class="mt-4 text-lg sm:text-xl text-text-secondary">
+                        Building an amazing portfolio website...
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 sm:py-24 bg-subtle-bg">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary text-center mb-12">My Projects</h2>
+                <!-- Project content will be added here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-text-primary">Get In Touch</h2>
+                <!-- Contact content will be added here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-subtle-bg">
+        <div class="container mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500 border-t border-gray-200">
+            &copy; 2025 Your Name. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html> 
