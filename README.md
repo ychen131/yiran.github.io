@@ -4,7 +4,7 @@ A lightweight, fast-loading personal portfolio website built with HTML5 and Tail
 
 ## 🚀 Live Site
 
-Visit the live website at: [https://your-username.github.io](https://your-username.github.io)
+Visit the live website at: [https://ychen131.github.io](https://ychen131.github.io)
 
 ## 🛠️ Tech Stack
 
@@ -16,7 +16,7 @@ Visit the live website at: [https://your-username.github.io](https://your-userna
 ## 📁 Project Structure
 
 ```
-your-username.github.io/
+ychen131.github.io/
 ├── 📄 index.html          # Main HTML file
 ├── 📂 assets/
 │   └── 📂 images/         # Profile photo and project media
@@ -62,4 +62,4 @@ your-username.github.io/
 
 ---
 
-Built with ❤️ using modern web technologies for fast, accessible performance. 
+Built with ❤️ using modern web technologies for fast, accessible performance.

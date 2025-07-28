@@ -11,10 +11,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 dev-debug.log
+
 # Dependency directories
 node_modules/
+
 # Environment variables
 .env
+
 # Editor directories and files
 .idea
 .vscode
@@ -23,10 +26,13 @@ node_modules/
 *.njsproj
 *.sln
 *.sw?
+
 # OS specific
 .DS_Store
 
 # Task files
 # tasks.json
 # tasks/ 
+
+# Nested repository
 yiran.github.io/
