@@ -170,11 +170,20 @@
                     <div class="flex justify-center lg:justify-end">
                         <div class="relative">
                             <div class="profile-photo w-80 h-80 rounded-full overflow-hidden bg-subtle-bg shadow-2xl">
-                                <!-- Modern responsive image with WebP fallback -->
-                                <picture>
-                                    <source srcset="assets/images/profile-photo.webp" type="image/webp">
-                                    <img src="assets/images/profile-photo.jpg" alt="Yiran Chen - Full-Stack Software Developer" class="w-full h-full object-cover">
-                                </picture>
+                                <!-- Profile photo with fallback background -->
+                                <img 
+                                    src="assets/images/profile-photo.jpg" 
+                                    alt="Yiran Chen - Full-Stack Software Developer" 
+                                    class="w-full h-full object-cover"
+                                    onerror="console.log('Image failed to load:', this.src); this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                    onload="console.log('Image loaded successfully:', this.src);"
+                                >
+                                <!-- Fallback placeholder if image fails to load -->
+                                <div class="w-full h-full bg-gradient-to-br from-accent/20 to-accent/40 flex items-center justify-center" style="display: none;">
+                                    <svg class="w-32 h-32 text-accent/60" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
