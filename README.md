@@ -4,7 +4,7 @@ A lightweight, fast-loading personal portfolio website built with HTML5 and Tail
 
 ## 🚀 Live Site
 
-Visit the live website at: [https://ychen131.github.io](https://ychen131.github.io)
+Visit the live website at: [https://ychen131.github.io/yiran.github.io/](https://ychen131.github.io/yiran.github.io/)
 
 ## 🛠️ Tech Stack
 
